@@ -1,7 +1,6 @@
 class Array
-  def chris_inject
-    (arg = nil, arg_sym = nil)
-    arg.nil? || arg.is_a?(Symbol) ? result = shift : result = arg
-  end
-  result
+    def chris_inject(&proc)
+      self.first
+      self.each {|n| p proc.call(n) }
+    end
 end

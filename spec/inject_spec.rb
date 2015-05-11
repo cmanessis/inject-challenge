@@ -2,7 +2,7 @@ require 'inject'
 
 describe Array do
 
-  # it { is_expected.tp respond_to :chris_inject }
+
   array = [1,2,3]
 
     it "should add" do
